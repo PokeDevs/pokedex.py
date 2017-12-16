@@ -1,7 +1,7 @@
-Pokédex API Wrapper Library
+Pokedex API Wrapper Library
 ===========================
 
-A wrapper library for the `Pokédex API`_. Get all your Pokémon Needs in
+A wrapper library for the `Pokedex API`_. Get all your Pokemon Needs in
 one place.
 
 |GitHub release| |license| |Say Thanks!|
@@ -28,7 +28,7 @@ Get Started
 Read the `Wiki`_ to see the available classes and methods (with
 examples) and know how to use them.
 
-Pokédex API
+Pokedex API
 -----------
 
 -  `Official Website and Documentation`_
@@ -38,7 +38,7 @@ Pokédex API
 Contributors
 ------------
 
-The developer of the `Pokédex API`_ and this wrapper library is
+The developer of the `Pokedex API`_ and this wrapper library is
 `k3rn31p4nic`_
 
 `List of all contributors`_
@@ -60,7 +60,7 @@ License
     If you liked this project you can **⭐ Star** it on `GitHub`_ to show
     your love.
 
-.. _Pokédex API: https://pokedevs.bastionbot.org
+.. _Pokedex API: https://pokedevs.bastionbot.org
 .. _Python: https://python.org
 .. _PyPI: https://pypi.python.org/
 .. _download and install Python: https://www.python.org/downloads/
