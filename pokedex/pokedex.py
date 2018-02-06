@@ -29,6 +29,13 @@ class Pokedex(object):
             'Auth': self.AUTH
         }
 
+    def make_request(self, path):
+        res = requests.get(path, headers=self.headers)
+        if res.ok or res.status_code == 404:
+            return res.json()
+        else:
+            return res.raise_for_status()
+
     # Endpoint: /categories
     def get_categories(self):
         """
@@ -36,12 +43,7 @@ class Pokedex(object):
         World.
         """
         endpoint = '/categories'
-
-        res = requests.get(self.BASE_URL + endpoint, headers=self.headers)
-        if res.ok or res.status_code == 404:
-            return res.json()
-        else:
-            return res.raise_for_status()
+        return self.make_request(self.BASE_URL + endpoint)
 
     # Endpoint: /egg-groups
     def get_egg_groups(self):
@@ -50,12 +52,7 @@ class Pokedex(object):
         World.
         """
         endpoint = '/egg-groups'
-
-        res = requests.get(self.BASE_URL + endpoint, headers=self.headers)
-        if res.ok or res.status_code == 404:
-            return res.json()
-        else:
-            return res.raise_for_status()
+        return self.make_request(self.BASE_URL + endpoint)
 
     # Endpoint: /evolution-stone
     def get_evolution_stones(self):
@@ -64,12 +61,7 @@ class Pokedex(object):
         Pokemon world.
         """
         endpoint = '/evolution-stone'
-
-        res = requests.get(self.BASE_URL + endpoint, headers=self.headers)
-        if res.ok or res.status_code == 404:
-            return res.json()
-        else:
-            return res.raise_for_status()
+        return self.make_request(self.BASE_URL + endpoint)
 
     def get_evolution_stone(self, slug):
         """
@@ -77,12 +69,7 @@ class Pokedex(object):
         evolution stone.
         """
         endpoint = '/evolution-stone/' + slug
-
-        res = requests.get(self.BASE_URL + endpoint, headers=self.headers)
-        if res.ok or res.status_code == 404:
-            return res.json()
-        else:
-            return res.raise_for_status()
+        return self.make_request(self.BASE_URL + endpoint)
 
     # Endpoint: /league
     def get_leagues(self):
@@ -90,12 +77,7 @@ class Pokedex(object):
         Returns an array of Pokemon League names known to us.
         """
         endpoint = '/league'
-
-        res = requests.get(self.BASE_URL + endpoint, headers=self.headers)
-        if res.ok or res.status_code == 404:
-            return res.json()
-        else:
-            return res.raise_for_status()
+        return self.make_request(self.BASE_URL + endpoint)
 
     def get_league(self, slug):
         """
@@ -103,12 +85,7 @@ class Pokedex(object):
         league.
         """
         endpoint = '/league/' + slug
-
-        res = requests.get(self.BASE_URL + endpoint, headers=self.headers)
-        if res.ok or res.status_code == 404:
-            return res.json()
-        else:
-            return res.raise_for_status()
+        return self.make_request(self.BASE_URL + endpoint)
 
     # Endpoint: /pokemon
     def get_pokemon(self, number):
@@ -117,12 +94,7 @@ class Pokedex(object):
         Pokemon specified the Pokedex number.
         """
         endpoint = '/pokemon/' + str(number)
-
-        res = requests.get(self.BASE_URL + endpoint, headers=self.headers)
-        if res.ok or res.status_code == 404:
-            return res.json()
-        else:
-            return res.raise_for_status()
+        return self.make_request(self.BASE_URL + endpoint)
 
     def get_pokemon_counts(self):
         """
@@ -130,12 +102,7 @@ class Pokedex(object):
         each generation and the total number of Pokemon in the Pokemon World.
         """
         endpoint = '/pokemon/counts'
-
-        res = requests.get(self.BASE_URL + endpoint, headers=self.headers)
-        if res.ok or res.status_code == 404:
-            return res.json()
-        else:
-            return res.raise_for_status()
+        return self.make_request(self.BASE_URL + endpoint)
 
     # Endpoint: /types
     def get_types(self):
@@ -143,9 +110,4 @@ class Pokedex(object):
         Returns an array of Pokemon Types discovered in the Pokemon World.
         """
         endpoint = '/types'
-
-        res = requests.get(self.BASE_URL + endpoint, headers=self.headers)
-        if res.ok or res.status_code == 404:
-            return res.json()
-        else:
-            return res.raise_for_status()
+        return self.make_request(self.BASE_URL + endpoint)
