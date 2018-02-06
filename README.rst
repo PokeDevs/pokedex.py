@@ -4,7 +4,7 @@ Pokedex API Wrapper Library
 A wrapper library for the `Pokedex API`_. Get all your Pokemon Needs in
 one place.
 
-|GitHub release| |license| |Say Thanks!|
+|GitHub release| |Known Vulnerabilities| |license| |Say Thanks!|
 
 Installation
 ------------
@@ -79,5 +79,7 @@ License
    :target: https://github.com/PokeDevs/pokedex.py/releases
 .. |license| image:: https://img.shields.io/github/license/PokeDevs/pokedex.py.svg
    :target: LICENSE
+.. |Known Vulnerabilities| image:: https://snyk.io/test/github/PokeDevs/pokedex.py/badge.svg
+   :target: https://snyk.io/test/github/PokeDevs/pokedex.py
 .. |Say Thanks!| image:: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
    :target: https://saythanks.io/to/k3rn31p4nic
