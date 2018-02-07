@@ -9,7 +9,7 @@ with open('requirements.txt', 'r', 'utf-8') as f:
 
 setup(
     name='pokedex.py',
-    version='1.0.1',
+    version='1.1.0',
     description='A Python library for the Pokedex API.',
     long_description=readme,
     url='https://github.com/PokeDevs/pokedex.py',
