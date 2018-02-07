@@ -88,13 +88,19 @@ class Pokedex(object):
         return self.make_request(self.BASE_URL + endpoint)
 
     # Endpoint: /pokemon
-    def get_pokemon(self, number):
+    def get_pokemon_by_number(self, number):
         """
         Returns an array of Pokemon objects containing all the forms of the
         Pokemon specified the Pokedex number.
         """
         endpoint = '/pokemon/' + str(number)
         return self.make_request(self.BASE_URL + endpoint)
+
+    def get_pokemon(self, number):
+        """
+        Depricated: Use get_pokemon_by_number() instead.
+        """
+        return self.get_pokemon_by_number(number)
 
     def get_pokemon_counts(self):
         """
