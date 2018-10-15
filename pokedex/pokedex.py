@@ -13,7 +13,7 @@ class Pokedex(object):
         """
         super(Pokedex, self).__init__()
 
-        base_url = 'https://pokeapi.bastionbot.org'
+        base_url = 'https://pokeapi.glitch.me'
 
         version = kwargs.get('version', None)
         if (version):
