@@ -9,15 +9,15 @@ with open('requirements.txt', 'r', 'utf-8') as f:
 
 setup(
     name='pokedex.py',
-    version='1.1.2',
-    description='A Python library for the Pokedex API.',
+    version='2.0.0',
+    description='Python wrapper library for the Pokédex API.',
     long_description=readme,
     url='https://github.com/PokeDevs/pokedex.py',
-    author='k3rn31p4nic',
-    license='GPL-3.0',
+    author='iamtraction',
+    license='MIT',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
-        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+        'License :: OSI Approved :: MIT License',
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'Operating System :: OS Independent',

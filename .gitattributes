@@ -1,53 +1,5 @@
-* text=auto
+* text=auto eol=lf
 
-# Documents
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
-*.md text
-*.adoc text
-*.textile text
-*.mustache text
-*.csv text
-*.tab text
-*.tsv text
-*.sql text
-
-# Graphics
-*.png binary
-*.jpg binary
-*.jpeg binary
-*.gif binary
-*.tif binary
-*.tiff binary
-*.ico binary
-*.svg binary
-*.eps binary
-# Basic .gitattributes for a python repo.
-
-# Source files
-*.pxd		text
-*.py 		text
-*.py3 		text
-*.pyw 		text
-*.pyx  		text
-
-# Binary files
-*.db		binary
-*.p 		binary
-*.pkl 		binary
-*.pyc 		binary
-*.pyd		binary
-*.pyo 		binary
-
-# Note: .db, .p, and .pkl files are associated
-# with the python modules ``pickle``, ``dbm.*``,
-# ``shelve``, ``marshal``, ``anydbm``, & ``bsddb``
-# (among others).
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf

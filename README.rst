@@ -1,10 +1,7 @@
 Pokedex API Wrapper Library
 ===========================
 
-A wrapper library for the `Pokedex API`_. Get all your Pokemon Needs in
-one place.
-
-|GitHub release| |Known Vulnerabilities| |license| |Say Thanks!|
+A wrapper library for the `Pokedex API`_.
 
 Installation
 ------------
@@ -18,7 +15,7 @@ Installation is done using the ``pip install`` command:
 
 .. code:: bash
 
-    $ pip install pokedex.py
+    pip install pokedex.py
 
 For more info, see `pip install`_ docs.
 
@@ -33,13 +30,13 @@ Pokedex API
 
 -  `Official Website and Documentation`_
 -  `GitHub Organization`_ for other libraries
--  `Discord`_ for support and discussion
+-  `Discord`_ for discussion
 
 Contributors
 ------------
 
 The developer of the `Pokedex API`_ and this wrapper library is
-`k3rn31p4nic`_
+`@iamtraction`_
 
 `List of all contributors`_
 
@@ -55,10 +52,9 @@ Donate
 License
 -------
 
-`GPL-3.0`_
+`MIT`_
 
-    If you liked this project you can **⭐ Star** it on `GitHub`_ to show
-    your love.
+    If you liked this project you can **⭐ Star** it on `GitHub`_.
 
 .. _Pokedex API: https://pokedevs.bastionbot.org
 .. _Python: https://python.org
@@ -69,17 +65,8 @@ License
 .. _Official Website and Documentation: https://pokedevs.bastionbot.org
 .. _GitHub Organization: https://github.com/PokeDevs
 .. _Discord: https://discord.gg/7P4H3TY
-.. _k3rn31p4nic: https://sankarsankampa.com
+.. _@iamtraction: https://github.com/iamtraction
 .. _List of all contributors: https://github.com/PokeDevs/pokedex.py/graphs/contributors
 .. _PayPal: https://paypal.me/snkrsnkampa
-.. _GPL-3.0: https://github.com/PokeDevs/pokedex.py/blob/master/LICENSE.txt
+.. _MIT: https://github.com/PokeDevs/pokedex.py/blob/master/LICENSE.txt
 .. _GitHub: https://github.com/PokeDevs/pokedex.py
-
-.. |GitHub release| image:: https://img.shields.io/github/release/PokeDevs/pokedex.py.svg?style=flat
-   :target: https://github.com/PokeDevs/pokedex.py/releases
-.. |license| image:: https://img.shields.io/github/license/PokeDevs/pokedex.py.svg
-   :target: LICENSE
-.. |Known Vulnerabilities| image:: https://snyk.io/test/github/PokeDevs/pokedex.py/badge.svg
-   :target: https://snyk.io/test/github/PokeDevs/pokedex.py
-.. |Say Thanks!| image:: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
-   :target: https://saythanks.io/to/k3rn31p4nic
